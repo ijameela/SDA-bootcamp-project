@@ -1,6 +1,6 @@
 # Capstone Chatbot Project
 
- Stage-2 Basic Chatbot with FastAPI
+Stage-3 Chatbot with Chat History
 
 ## How to use it
 
