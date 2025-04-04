@@ -44,3 +44,11 @@
 [32mINFO[0m:     [04-04-2025 04:49:43] ::1:65156 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
 [36mDEBUG[0m:    [04-04-2025 04:49:43] Collection langchain already exists, returning existing collection.
 [32mINFO[0m:     [04-04-2025 04:49:43] ::1:65156 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
+[32mINFO[0m:     [04-04-2025 04:54:43] ::1:65237 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [04-04-2025 04:54:43] ::1:65238 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-04-2025 04:54:43] ::1:65238 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [04-04-2025 04:54:43] Collection langchain already exists, returning existing collection.
+[32mINFO[0m:     [04-04-2025 04:54:43] ::1:65237 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
+[36mDEBUG[0m:    [04-04-2025 04:54:43] Collection langchain already exists, returning existing collection.
+[32mINFO[0m:     [04-04-2025 04:54:43] ::1:65237 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
+[32mINFO[0m:     [04-04-2025 04:54:44] Backing off send_request(...) for 0.7s (requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')))
