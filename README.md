@@ -2,8 +2,6 @@
 
 ## Project Stage 6: Postgres and Blob Storage on Azure with Terraform
 
-### Stage Introduction
-
 ![stage1-6](https://weclouddata.s3.us-east-1.amazonaws.com/cloud/project-stages/week4-stage6.1.png)
 
 Based on Stage 5, we are adding two new resources to the infrastructure: an Azure Database for PostgreSQL server and Azure Blob Storage. Instead of running PostgreSQL on the VM, we’ll use the Azure Database for PostgreSQL server for data storage, and files will be stored in Azure Blob Storage.
