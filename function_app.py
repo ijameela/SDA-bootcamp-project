@@ -28,8 +28,8 @@ kv_client = SecretClient(vault_url=KVUri, credential=credential)
 
 DB_NAME = kv_client.get_secret('PROJ-DB-NAME').value
 DB_USER = kv_client.get_secret('PROJ-DB-USER').value
-DB_PASSWORD = kv_client.get_secret('PROJ-DB-PASSWORD1').value
-DB_HOST = kv_client.get_secret('PROJ-DB-HOST1').value
+DB_PASSWORD = kv_client.get_secret('PROJ-DB-PASSWORD').value
+DB_HOST = kv_client.get_secret('PROJ-DB-HOST').value
 DB_PORT = kv_client.get_secret('PROJ-DB-PORT').value
 OPENAI_API_KEY = kv_client.get_secret('PROJ-OPENAI-API-KEY').value
 AZURE_STORAGE_SAS_URL = kv_client.get_secret('PROJ-AZURE-STORAGE-SAS-URL').value
