@@ -71,9 +71,11 @@ jobs:
           client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_6B4C4C4870284A1BB38EEED6299AC05A }}
           tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_93EFED50D2154423A5874392D5494175 }}
           subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_72789B4289754A78A32AB0D497159EDC }}
+          
       - name: Set Application Settings
         run: |
          az functionapp config appsettings set --name backend-service-2025-app --resource-group DemoSda --settings "FUNCTIONS_WORKER_RUNTIME=python" "KEY_VAULT_NAME=sdakeyvault0" "APPINSIGHTS_INSTRUMENTATIONKEY=azurerm_application_insights.ai.instrumentation_key"
+         
       - name: 'Deploy to Azure Functions'
         uses: Azure/functions-action@v1
         id: deploy-to-function
@@ -81,4 +83,6 @@ jobs:
           app-name: 'backend-service-2025-app'
           slot-name: 'Production'
           package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
+          scm-do-build-during-deployment: true
+          enable-oryx-build: true
           
