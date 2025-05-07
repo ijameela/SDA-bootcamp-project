@@ -1,4 +1,3 @@
-
 import azure.functions as func
 from openai import OpenAI
 import os
@@ -43,7 +42,7 @@ COSMOS_DATABASE = kv_client.get_secret('PROJ-COSMOSDB-DATABASE').value
 COSMOS_CONTAINER = kv_client.get_secret('PROJ-COSMOSDB-CONTAINER').value
 
 chat_client = OpenAI(api_key=OPENAI_API_KEY)
-model = "gpt-3.5-turbo"
+model = "o3-mini"
 
 DB_CONFIG = {
     "dbname": DB_NAME,
