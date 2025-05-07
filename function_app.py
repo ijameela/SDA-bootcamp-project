@@ -1,3 +1,4 @@
+
 import azure.functions as func
 from openai import OpenAI
 import os
