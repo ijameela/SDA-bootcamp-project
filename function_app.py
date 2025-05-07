@@ -42,7 +42,7 @@ COSMOS_DATABASE = kv_client.get_secret('PROJ-COSMOSDB-DATABASE').value
 COSMOS_CONTAINER = kv_client.get_secret('PROJ-COSMOSDB-CONTAINER').value
 
 chat_client = OpenAI(api_key=OPENAI_API_KEY)
-model = "o3-mini"
+model = "o3-mini-high"
 
 DB_CONFIG = {
     "dbname": DB_NAME,
